@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-image: url('background photo2.jpg');
+        background-size: cover;
+        background-attachment: fixed;
+      }
+
+      .section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        padding: 40px 20px;
+      }
+
+      .card {
+        width: 500px;
+        background-color: rgba(208, 204, 202, 0.8);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        border-radius: 10px;
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      h1 {
+        font-size: 40px;
+        font-style: italic;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      p {
+        font-size: 18px;
+        text-align: center;
+      }
+
+      label {
+        margin: 10px 0;
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+      }
+
+      input {
+        width: 60%;
+        padding: 6px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+      }
+
+      button {
+        margin-top: 20px;
+        padding: 10px 20px;
+        font-size: 16px;
+        font-weight: bold;
+        color: white;
+        background-color: rgb(182, 101, 101);
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      ul {
+        list-style: none;
+        padding: 0;
+        text-align: left;
+        width: 100%;
+      }
+
+      li {
+        font-size: 18px;
+        margin: 8px 0;
+      }
+
+      .buy-btn {
+        margin-top: 10px;
+        background-color: #28a745;
+      }
+      .specials-section{
+        display:flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding:30px;
+        gap:30px;
+      }
+      .card1{
+        width: 300px;
+        height: 300px;
+        background-color: rgba(208, 204, 202, 0.8);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        border-radius: 10px;
+        padding: 8px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+       
+      }
+      .card1:hover{
+        transform: scale(1.03);
+      }
+      
+
+      .shadow{
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        border-radius: 5px;
+      }
+      .button1{
+        margin: 0;
+        padding: 0;
+        line-height: 1;
+      }
+      h1#specials {
+           text-align: center;
+          margin-top: 60px;
+      }
+      .menu-section {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 30px;
+      flex-wrap: wrap;
+     }    
+
+.menu-card {
+  width: 300px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  font-size: 18px;
+  text-align: left;
+  transition: transform 0.2s;
+}
+
+.menu-card:hover {
+  transform: scale(1.03);
+}
+
+.menu-card h3 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+
+    </style>
+  </head>
+  <body>
+
+    <!-- Section 1: Landing -->
+    <div class="section" id="landing">
+      <div class="card">
+        <h1>Sunrise Bites</h1>
+        <p>“Wake up happy, one delicious bite at a time!”</p>
+        <p><strong>Get ₹100 off</strong> on your first order</p>
+        <label><b>Name:</b><input type="text"></label>
+        <label><b>Email:</b><input type="email"></label>
+        <a href="#specials"><button>See Meals and Pricing</button></a>
+      </div>
+    </div>
+
+    <!---section 2 -->
+         <h1 id="specials" class="shadow" style="background-color: rgb(246, 244, 241);">Today's Specials</h1><br>
+
+    <div class="specials-section"> 
+      <div class="card1">
+        <h4>🥞 Pancakes</h4>
+        <img src="pancake.jpeg" width="200px" height="200px" class="shadow">
+        <div class="button1"><p >cost: ₹120</p></div>
+        <button  onclick="window.location.href='buy.html'">Buy Now</button>
+      </div>
+      <div class="card1">
+        <h4>🧂 Masala Omelette</h4>
+        <img src="masala omlette.jpeg" width="150px" height="130px" class="shadow">
+        <div class="button1"><p >cost: ₹90</p></div>
+        <button  onclick="window.location.href='buy.html'"> Buy Now</button>
+      </div>
+      <div class="card1">
+        <h4>🥪 Veg Sandwich</h4>
+        <img src="sandwich.webp" width="200px" height="200px" class="shadow">
+        <div class="button1"><p >cost: ₹110</p></div>
+        <button  onclick="window.location.href='buy.html'">Buy Now</button>
+      </div>
+      <div class="card1">
+        <h4>☕ Idli with Coffee</h4>
+        <img src="idly.jpeg" width="200px" height="190px" class="shadow">
+        <div class="button1"><p >cost: ₹80</p></div>
+        <button  onclick="window.location.href='buy.html'">Buy Now</button>
+      </div>
+      <div class="card1">
+       <h4>🍚 Poha</h4>
+        <img src="poha.jpeg" width="200px" height="190px" class="shadow">
+        <div class="button1"><p >cost: ₹60</p></div>
+        <button  onclick="window.location.href='buy.html'">Buy Now</button> 
+      </div>
+      <div class="card1">
+       <h4>🍓 Smoothie Bowl </h4>
+        <img src="smoothie.jpeg" width="150px" height="130px" class="shadow">
+        <div class="button1"><p >cost: ₹60</p></div>
+        <button  onclick="window.location.href='buy.html'">Buy Now</button>  
+      </div>
+    </div>
+
+    <!---section 3-->
+    <h1 style="text-align:center; margin-top: 60px; background-color: rgb(252, 250, 249);" class="shadow" >Full Menu</h1>
+<div class="menu-section">
+  <div class="menu-card">
+    <h3>🍽️ Breakfast</h3>
+    <p>🥞 Pancakes - ₹120</p>
+    <p>🍳 Scrambled Eggs - ₹80</p>
+    <p>🍞 Toast with Butter - ₹50</p>
+    <p>🥯 Bagel & Cream Cheese - ₹100</p>
+    <p>🧇 Waffles - ₹130</p>
+    <p>🥓 Bacon Strips - ₹90</p>
+    <p>🥔 Hash Browns - ₹70</p>
+    <p>🍳 Masala Omelette - ₹90</p>
+    <p>🍛 Poha - ₹60</p>
+  </div>
+
+  <div class="menu-card">
+    <h3>🥤 Drinks</h3>
+    <p>🍌 Banana Smoothie - ₹70</p>
+    <p>☕ Coffee - ₹60</p>
+    <p>🍵 Green Tea - ₹55</p>
+    <p>🧃 Orange Juice - ₹65</p>
+    <p>🥛 Milkshake - ₹75</p>
+    <p>🍹 Mojito - ₹85</p>
+    <p>🥤 Cold Coffee - ₹90</p>
+    <p>🍓 Strawberry Shake - ₹80</p>
+    <p>🫖 Herbal Tea - ₹60</p>
+  </div>
+</div>
+
+
+    
